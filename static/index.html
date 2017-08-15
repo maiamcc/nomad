@@ -3,6 +3,8 @@
 <head>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/map-icons.css">
+	<script type="text/javascript" src="js/map-icons.js"></script>
 	<link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -10,14 +12,27 @@
 
 <div id="background-map"></div>
 
-<div class="global-header">
-	<div class="logo"></div>
+<div class="overlay">
+	<div class="intro">
+		<form>
+			<h1>Virginia has 100 districts that need your help this November, and other inspirational messages!</h1>
+			<label for="locationQuery">Find a carpool near you</label>
+			<input type="text" name="firstname" id="locationQuery" placeholder="Zip code or City, State"> <input type="submit" value="Search">
+			<label>Can you drive? <a href="">Start a carpool.</a></label>
+		</form>
+	</div>
+</div>
+
+<nav class="global-header">
 	<ul class="nav-bar">
+		<li class="logo"></li>
 		<li class="active">Find a ride</li>
 		<li>Give a ride</li>
 		<li>Login</li>
 	</ul>
-</div>
+</nav>
+
+
 
 <!-- <div class="jumbotron">
   <h1>Share Your Ride!</h1>

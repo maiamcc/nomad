@@ -1,15 +1,24 @@
 function initMap() {
 
+  var westva = {lat: 38.7624, lng: -79.7170677};
   var sweetbriar = {lat: 37.5551696, lng: -79.098562};
   var map = new google.maps.Map(document.getElementById('background-map'), {
     zoom: 7,
-    center: sweetbriar,
+    center: westva,
     styles: mapStyleDiscreet
   });
-  // var marker = new google.maps.Marker({
-  //   position: sweetbriar,
-  //   map: map
-  // });
+  var marker = new google.maps.Marker({
+    position: sweetbriar,
+    map: map,
+    // icon: {
+    //   path: MAP_PIN,
+    //   fillColor: '#6331AE',
+    //   fillOpacity: 1,
+    //   strokeColor: '',
+    //   strokeWeight: 0
+    // },
+    // map_icon_label: '<span class="map-icon map-icon-city-hall"></span>'
+  });
 }
 
 var mapStyleDiscreet = [
