@@ -1,0 +1,66 @@
+html, body {
+	height: 100%; 
+	width: 100%; 
+}
+
+html {
+	font: normal 13px/150% Arial, Helvetica, sans-serif;
+	color: #0F203F;
+	/*box-sizing: border-box;*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#background-map {
+	height: 100%; 
+	width: 100%; 
+	position:absolute; 
+	top: 0; 
+	left: 0; 
+	z-index: 0;
+	background-color: grey;
+}
+
+.global-header {
+	width: 100%;
+	height: 70px;
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	z-index: 5;
+	background-color: white;
+	box-shadow: 0 2px 5px rgba(80,80,80,0.4);
+}
+.logo {
+	width: 150px;
+	height: 75px;
+	background-color: #0F203F;
+	top: 15px;
+	left: 30px;
+	position: fixed;
+	display: inline-block;
+	background: url("http://theinspirationroom.com/daily/interactive/2016/6/underwood-2016-bumper-sticker.jpg") top left / contain no-repeat;
+}
+.nav-bar {
+	position: fixed;
+	width: 100%;
+	margin: 0;
+	top: 24px;
+	left: 180px;
+	display: inline-block;
+	font: 700 18px/150% Arial, Helvetica, sans-serif;
+}
+.nav-bar li {
+	position: relative;
+	display: inline-block;
+	margin-right: 30px;
+	padding-bottom: 15px;
+}
+.nav-bar li.active {
+	border-bottom: 5px solid #0F203F;
+}
+.nav-bar li:last-child {
+	float: right;
